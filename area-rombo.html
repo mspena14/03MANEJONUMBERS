@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Área de un rombo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script>
+ 
+function algoritmo()
+{
+    let area, diagonal_mayor, diagonal_menor;
+    diagonal_mayor = parseFloat (document.formulario1.diagonal_mayor.value);
+    diagonal_menor = parseFloat (document.formulario1.diagonal_menor.value);
+    area=diagonal_mayor*diagonal_menor/2;
+    document.formulario1.area.value = area;
+}
+ 
+        </script>
+    </head>
+    <body>
+        <form name="formulario1">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="diagonal_mayor">Ingresa el valor de diagonal mayor:</label>
+                        </td>
+                        <td>
+                            <input name="diagonal_mayor" required="required" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="diagonal_menor">Ingresa el valor de diagonal menor:</label>
+                        </td>
+                        <td>
+                            <input name="diagonal_menor" required="required" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2" rowspan="1">
+                            <input value="Procesar" type="button" onclick="algoritmo();" />
+                            <input type="reset" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="area">Valor de area:</label>
+                        </td>
+                        <td>
+                            <input name="area" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
