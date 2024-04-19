@@ -1,79 +1,5 @@
 
-
-
-// 25. Calcular la resta entre 50 y 25.
-// 26. Multiplicar 7 por 9.
-// 27. Dividir 144 por 12.
-// 28. Obtener el módulo de 17 dividido por 4.
-// 29. Generar un número aleatorio entre 20 y 30.
-// 30. Elevar 2 a la potencia de 8.
-// 31. Calcular la raíz cuadrada de 144.
-// 32. Convertir 100 grados Celsius a Fahrenheit.
-// 33. Calcular el área de un rectángulo de base 5 y altura 10.
-// 34. Calcular el perímetro de un círculo con radio 6.
-// 35. Calcular el volumen de un cubo con lado 4.
-// 36. Calcular el área de un rombo con diagonales de 8 y 10.
-// 37. Calcular el área de un trapecio con bases 6 y 10 y altura 4.
-// 38. Generar la tabla de multiplicar del número 8.
-// 39. Encontrar el número mayor entre 15, 20 y 25.
-// 40. Encontrar el número menor entre 50, 75 y 100.
-// 41. Calcular el promedio de 7, 9 y 12.
-// 42. Calcular la factorial de 7.
-// 43. Redondear el número 7.9.
-// 44. Calcular el doble de 15.
-// 45. Calcular el triple de 6.
-// 46. Calcular el cuadrado de 8.
-// 47. Calcular el cubo de 4.
-// 48. Calcular la suma de los primeros 15 números naturales.
-// 49. Calcular la resta entre 100 y 55.
-// 50. Multiplicar 6 por 8.
-// 51. Dividir 225 por 15.
-// 52. Obtener el módulo de 20 dividido por 7.
-// 53. Generar un número aleatorio entre 40 y 50.
-// 54. Elevar 3 a la potencia de 4.
-// 55. Calcular la raíz cuadrada de 169.
-// 56. Convertir 80 grados Celsius a Fahrenheit.
-// 57. Calcular el área de un rectángulo de base 8 y altura 12.
-// 58. Calcular el perímetro de un círculo con radio 8.
-// 59. Calcular el volumen de un cubo con lado 5.
-// 60. Calcular el área de un rombo con diagonales de 12 y 16.
-// 61. Calcular el área de un trapecio con bases 8 y 12 y altura 6.
-// 62. Generar la tabla de multiplicar del número 9.
-// 63. Encontrar el número mayor entre 25, 30 y 35.
-// 64. Encontrar el número menor entre 80, 95 y 110.
-// 65. Calcular el promedio de 8, 10 y 14.
-// 66. Calcular la factorial de 8.
-// 67. Redondear el número 9.2.
-// 68. Calcular el doble de 18.
-// 69. Calcular el triple de 7.
-// 70. Calcular el cuadrado de 10.
-// 71. Calcular el cubo de 5.
-// 72. Calcular la suma de los primeros 20 números naturales.
-// 73. Calcular la resta entre 200 y 75.
-// 74. Multiplicar 9 por 11.
-// 75. Dividir 300 por 25.
-// 76. Obtener el módulo de 30 dividido por 9.
-// 77. Generar un número aleatorio entre 60 y 70.
-// 78. Elevar 4 a la potencia de 5.
-// 79. Calcular la raíz cuadrada de 196.
-// 80. Convertir 120 grados Celsius a Fahrenheit.
-// 81. Calcular el área de un rectángulo de base 10 y altura 15.
-// 82. Calcular el perímetro de un círculo con radio 10.
-// 83. Calcular el volumen de un cubo con lado 6.
-// 84. Calcular el área de un rombo con diagonales de 14 y 18.
-// 85. Calcular el área de un trapecio con bases 10 y 15 y altura 8.
-// 86. Generar la tabla de multiplicar del número 10.
-// 87. Encontrar el número mayor entre 35, 40 y 45.
-// 88. Encontrar el número menor entre 90, 105 y 120.
-// 89. Calcular el promedio de 9, 11 y 15.
-// 90. Calcular la factorial de 9.
-// 91. Redondear el número 10.8.
-// 92. Calcular el doble de 21.
-// 93. Calcular el triple de 8.
-// 94. Calcular el cuadrado de 12.
-// 95. Calcular el cubo de 6.
-// 96. Calcular la suma de los primeros 25 números naturales
-
+console.groupCollapsed("Ejercicios numbers");
 console.groupCollapsed("Ejercicio 1");
 // 1. Sumar dos números.
 console.log(5+20)
@@ -177,7 +103,6 @@ console.groupCollapsed("Ejercicio 18");
 let resultado = 1
 for (let i = 1; i <= 5; i++) {
     resultado *= i
-    console.log(resultado)
 }
 console.log(`El factorial de 5 es ${resultado}`)
 console.groupEnd();
@@ -209,127 +134,197 @@ console.groupEnd();
 
 console.groupCollapsed("Ejercicio 24");
 // 24. Calcular la suma de los primeros 10 números naturales.
-let sum = 0
-for (let i = 0; i <= 10; i++) {
-    sum += i
+function sumNumeros(numMayor) {
+    let sum = 0
+    for (let i = 0; i <= numMayor; i++) {
+        sum += i
+    } 
+    return sum
 }
-console.log("La suma de los primeros números naturales es " + sum)
+console.log(sumNumeros(10))
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 25");
-// Ejercicio 25
+// 25. Calcular la resta entre 50 y 25.
+console.log(50 - 25)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 26");
-// Ejercicio 26
+// 26. Multiplicar 7 por 9.
+console.log(7*9)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 27");
-// Ejercicio 27
+// 27. Dividir 144 por 12.
+console.log(144 / 12)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 28");
-// Ejercicio 28
+// 28. Obtener el módulo de 17 dividido por 4.
+console.log(17 % 4);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 29");
-// Ejercicio 29
+// 29. Generar un número aleatorio entre 20 y 30.
+let numeroAleatorio = Math.round(Math.random() * (30 - 20)) + 20
+console.log(numeroAleatorio)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 30");
-// Ejercicio 30
+// 30. Elevar 2 a la potencia de 8.
+console.log(Math.pow(2,8))
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 31");
-// Ejercicio 31
+// 31. Calcular la raíz cuadrada de 144.
+console.log(Math.sqrt(144));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 32");
-// Ejercicio 32
+// 32. Convertir 100 grados Celsius a Fahrenheit.
+let celcius32 = 100
+console.log((celcius*9/5)+32)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 33");
-// Ejercicio 33
+// 33. Calcular el área de un rectángulo de base 5 y altura 10.
+function calArea(base, altura) {
+    let area = base*altura
+    return area
+}
+console.log(calArea(5,10))
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 34");
-// Ejercicio 34
+// 34. Calcular el perímetro de un círculo con radio 6.
+function calPerCirculo(radio) {
+    let perCiculo = 2*Math.PI*radio
+    return perCiculo
+}
+console.log(calPerCirculo(6));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 35");
-// Ejercicio 35
+// 35. Calcular el volumen de un cubo con lado 4.
+function calVolCubo(lado) {
+    let volCubo = Math.pow(lado, 3)
+    return volCubo
+}
+console.log(calVolCubo(4))
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 36");
-// Ejercicio 36
+// 36. Calcular el área de un rombo con diagonales de 8 y 10.
+function calAreaRombo(d, D) {
+    let areaRombo = (d * D) / 2
+    return areaRombo
+}
+console.log(calAreaRombo(8, 10));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 37");
-// Ejercicio 37
+// 37. Calcular el área de un trapecio con bases 6 y 10 y altura 4.
+function calAreaTrap(baseMay, baseMen, altura) {
+    let areaTrap = ((baseMay + baseMen) * altura ) / 2
+    return areaTrap
+}
+console.log(calAreaTrap(10, 6, 4));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 38");
-// Ejercicio 38
+// 38. Generar la tabla de multiplicar del número 8.
+console.log("Tabla del 8")
+for (let i = 1; i < 11; i++) {
+    console.log(`8x${i} = ${8*i}`)
+}
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 39");
-// Ejercicio 39
+// 39. Encontrar el número mayor entre 15, 20 y 25.
+
+console.log(Math.max(15, 20, 25));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 40");
-// Ejercicio 40
+// 40. Encontrar el número menor entre 50, 75 y 100.
+console.log(Math.min(50, 75, 100));
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 41");
-// Ejercicio 41
+// 41. Calcular el promedio de 7, 9 y 12.
+let listNum47 = [7, 9, 12]
+let suma47 = listNum47.reduce(function(total, numero) {
+    return total + numero;
+}, 0);
+console.log(suma47/listNum47.length)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 42");
-// Ejercicio 42
+// 42. Calcular la factorial de 7.
+let resultado42 = 1
+for (let i = 1; i <= 7; i++) {
+    resultado *= i
+}
+console.log(`El factorial de 7 es ${resultado}`)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 43");
-// Ejercicio 43
+// 43. Redondear el número 7.9.
+console.log(Math.floor(7.9))
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 44");
-// Ejercicio 44
+// 44. Calcular el doble de 15.
+let varPunto44 = 15
+console.log(varPunto44 * 2)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 45");
-// Ejercicio 45
+// 45. Calcular el triple de 6.
+let varPunto45 = 6
+console.log(varPunto45 * 3)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 46");
-// Ejercicio 46
+// 46. Calcular el cuadrado de 8.
+let varPunto46 = 8
+console.log(Math.pow(varPunto46, 2))
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 47");
-// Ejercicio 47
+// 47. Calcular el cubo de 4.
+let varPunto47 = 4
+console.log(Math.pow(varPunto47, 3))
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 48");
-// Ejercicio 48
+// 48. Calcular la suma de los primeros 15 números naturales.
+console.log(sumNumeros(15))
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 49");
-// Ejercicio 49
+// 49. Calcular la resta entre 100 y 55.
+console.log(100 - 55)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 50");
-// Ejercicio 50
+// 50. Multiplicar 6 por 8.
+console.log(6 * 8)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 51");
-// Ejercicio 51
+// 51. Dividir 225 por 15.
+console.log(255 / 15)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 52");
-// Ejercicio 52
+// 52. Obtener el módulo de 20 dividido por 7.
+console.log(20 % 7)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 53");
-// Ejercicio 53
+// 53. Generar un número aleatorio entre 40 y 50.
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 54");
@@ -503,3 +498,4 @@ console.groupEnd();
 console.groupCollapsed("Ejercicio 96");
 // Ejercicio 96
 console.groupEnd();
+console.groupEnd()

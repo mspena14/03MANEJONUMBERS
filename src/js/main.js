@@ -114,7 +114,7 @@ let min = 50
 let max = 100
 
 // Generar un número aleatorio dentro del rango
-var numeroAleatorio = Math.round(Math.random() * (max - min)) + min
+let numeroAleatorio = Math.round(Math.random() * (max - min)) + min
 
 // Mostrar el número aleatorio generado
 console.log(numeroAleatorio)
